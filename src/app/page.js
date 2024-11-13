@@ -1,7 +1,7 @@
-
 import Image from "next/image";
 import Header from '/src/app/components/Header';
 import Head from 'next/head';
+
 
 export default function Home() {
   return (
@@ -47,7 +47,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-gray-900 text-white py-12 border-t border-white">
+        <section className="bg-gray-900 text-white py-12 border-t">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl font-bold text-center mb-6">Team Terkait</h2>
             <div className="flex flex-wrap justify-center">
@@ -107,42 +107,41 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative bg-cover bg-center h-screen" style={{ backgroundImage: src=/assets/VillageFooter.png }}>
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
-            <div className="text-center text-white">
-              <div className="flex justify-center items-center mb-4">
-                <div className="border-t border-white w-1/4"></div>
-                <img src="/assets/Ruang_desa_pth" alt="Ruang Desa Logo" className="mx-4" />
-                <div className="border-t border-white w-1/4"></div>
-              </div>
-              <h1 className="text-4xl font-bold">Ruang Desa</h1>
-            </div>
-            <div className="bg-white bg-opacity-20 p-8 rounded-lg mt-8">
-              <h2 className="text-white text-lg">Dapatkan informasi</h2>
-              <h1 className="text-white text-5xl font-bold">Terkini</h1>
-              <div className="mt-4">
-                <input type="email" placeholder="Masukan Email Terkini" className="p-4 rounded-l-lg w-64" />
-                <button className="bg-blue-900 text-white p-4 rounded-r-lg">Kirim</button>
-              </div>
-            </div>
-            <div className="text-white mt-8">
-              <h2 className="text-lg">Ikuti kami :</h2>
-              <div className="flex justify-center space-x-4 mt-2">
-                <a href="#"><i className="fab fa-instagram"></i></a>
-                <a href="#"><i className="fas fa-envelope"></i></a>
-                <a href="#"><i className="fas fa-headphones"></i></a>
-              </div>
-            </div>
-            <div className="text-white mt-8 flex space-x-8">
-              <a href="#">Tentang</a>
-              <a href="#">Terkait</a>
-              <a href="#">Kontak</a>
-            </div>
-            <div className="text-white mt-8">
-              <p>2024. Hak Cipta Dilindungi | © Ruang Desa</p>
-            </div>
-          </div>
-        </section>
+        <section className="relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/assets/VillageFooter.png')" }}>
+  <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
+    <div className="text-center text-white">
+      <div className="flex flex-row justify-center items-center mb-4">
+        <div className="border-t border-white w-1/4"></div>
+        <img src="/assets/Ruang_desa_pth.png" alt="Ruang Desa Logo" className="mx-4 w-16 h-16" />
+        <div className="border-t border-white w-1/4"></div>
+      </div>
+    </div>
+    <div className="bg-white bg-opacity-20 p-8 rounded-lg mt-8">
+      <h2 className="text-white text-lg">Dapatkan informasi</h2>
+      <h1 className="text-white text-5xl font-bold">Terkini</h1>
+      <div className="mt-4">
+        <input type="email" placeholder="Masukan Email Terkini" className="p-4 rounded-l-lg w-64" />
+        <button className="bg-blue-900 text-white p-4 rounded-r-lg">Kirim</button>
+      </div>
+    </div>
+    <div className="text-white mt-8">
+      <h2 className="text-lg">Ikuti kami :</h2>
+      <div className="flex justify-center space-x-4 mt-2">
+        <a href="#"><i className="fab fa-instagram"></i></a>
+        <a href="#"><i className="fas fa-envelope"></i></a>
+        <a href="#"><i className="fas fa-headphones"></i></a>
+      </div>
+    </div>
+    <div className="text-white mt-8 flex space-x-8">
+      <a href="#">Tentang</a>
+      <a href="#">Terkait</a>
+      <a href="#">Kontak</a>
+    </div>
+    <div className="text-white mt-8">
+      <p>2024. Hak Cipta Dilindungi | © Ruang Desa</p>
+    </div>
+  </div>
+</section>
       </main>
     </>
   );
